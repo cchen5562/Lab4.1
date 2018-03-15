@@ -7,6 +7,7 @@ public class Deck
 	ArrayList<Card> Dealt;
 
 	//the constructor
+	
 	public Deck(String[] rank, String[] suit, int[] value)
 	{
 		for (int i = 0; i < rank.length; i++) 
