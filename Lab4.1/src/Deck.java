@@ -47,10 +47,17 @@ public class Deck
 		else 
 		{
 			unDealt.remove(x); 
-			return x;
-			Dealt.add(x);		//whyyy
+			Dealt.add(x);		
 			return x;
 		}
+	}
+	
+	//shuffles the deck
+	public void shuffle()
+	{
+		Card temp = unDealt.get(0);
+		int k = (int) Math.random(); 
+		unDealt.set(k, temp);
 	}
 	
 }
